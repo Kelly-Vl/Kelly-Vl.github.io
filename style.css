@@ -8,6 +8,7 @@ html {
     display: block;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    overflow: auto;
 }
 
 body {
@@ -18,8 +19,14 @@ body {
 
 /* Video Background */
 
-#videoBG {
-    position: fixed;
+section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.videoBG {
+    position: absolute;
     right: 0;
     bottom: 0;
     min-width: 100%;
@@ -132,22 +139,6 @@ body {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
-.skill-bg {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-
-    background-image: url("Assets/3969.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
 /* Text Animation */
 .loading-text {
   .char {
@@ -251,3 +242,20 @@ body {
     }
 }
 
+/* Skills */
+
+.skill-bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    background-image: url("Assets/underwater_bg3.mp4");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
