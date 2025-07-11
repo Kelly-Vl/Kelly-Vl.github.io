@@ -2,59 +2,80 @@
 <html>
     <head>
         <title>My Portfolio</title>
+
+        <!-- Links/Fonts -->
         <link href = "style.css" rel = "stylesheet">
+        <link href = "https://fonts.googleapis.com/css?family=Archivo" rel = "stylesheet">
+        <link href = "https://fonts.googleapis.com/css?family=Raleway" rel = "stylesheet">
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-        
     </head>
 
     <body>
-        <section id = "Home">
-            <div class = "bg1">
-                <div class = "topnav">
-                    <a href = '#Home'>Home</a>
-                    <a href = "#Projects">Projects</a>
-                    <a href = '#Contact'>Contact</a>
-                    <a href = '#about'>About</a>
-                </div>
+        <section id = "about">
+            <video autoplay muted loop id = "videoBG">
+                <source src = "Assets/underwater_bg.mp4" type = "video/mp4">
+            </video>
 
-                <div class = "home-container">
-                    <div class = "left-centered">
-                        <h2 style = "color: white; margin-bottom: 5px">OUR VISION</h2>
-                        <h1 style = "color: white; font-size: 100px; margin-top: 5px; margin-bottom: 5px" class = "block-reveal">
-                            <span>Introduction</span>
-                        </h1>
-                    <div class = "text-box">
-                        <p style = "color: white;">
-                            Insert whatever introduction here I have yet to think about
-                            content nor what to write about. Wonder how long I can type this until
-                            I just copy paste lorem ipsum bla bla bla. Need this to be long enough 
-                            to test the text box div thingy.
-                        </p>
-                    </div>
-                    </div>
-                </div>
+            <header>
+                <nav id = "navbar" class = "transparent">
+                    <ul class = "nav-left">
+                        <li>
+                            <a href = "#home" class = nav-link id = "home-link">KELLY VALENCIA</a>
+                        </li>
+                    </ul>
+
+                    <ul class = "nav-right">
+                        <li>
+                            <a href = "#about" class = "nav-link">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href = "#skills" class = "nav-link">SKILLS</a>
+                        </li>
+                        <li>
+                            <a href = "#projects" class = "nav-link">PROJECTS</a>
+                        </li>
+                        <li>
+                            <a href = "#contact" class = "nav-link">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class = "about-bg">
+                <h1 id = "intro-h1" class = "loading-text">
+                    <span class = "char">W</span>
+                    <span class = "char">E</span>
+                    <span class = "char">L</span>
+                    <span class = "char">C</span>
+                    <span class = "char">O</span>
+                    <span class = "char">M</span>
+                    <span class = "char">E</span>
+                </h1>
+                <h2 id = "intro-h2" class = "floating-text">
+                    <span class = "char-float">TO</span>
+                    <span class = "char-float">MY</span>
+                    <span class = "char-float">PORTFOLIO</span>
+                </h2>
+                <p id = "intro-p" class = floating-text>
+                    <span class = "char-float">Computer</span>
+                    <span class = "char-float">Science</span>
+                    <span class = "char-float">and</span>
+                    <span class = "char-float">Cybersecurity</span>
+                    <span class = "char-float">Student</span>
+                    <span class = "char-float">at</span>
+                    <span class = "char-float">UWA</span>
+                </p>
             </div>
         </section>
 
-        <section id = "Projects">
-            <div class = "bg2">
-                <div class = "project-container">
-                    <div class = "right-centered-project">
-                        <h2 style = "color: white; margin-bottom: 5px; text-align: end;" id = "Projects">Projects</h2>
-                        <h1 style = "color: white; font-size: 100px; margin-top: 5px; margin-bottom: 5px; text-align: end;">What I made:</h1>
-                    </div>
-                </div>
+        <section id = "skills">
+            <div class = "skill-bg">
             </div>
         </section>
 
-        <section id = "Contact">
-        <div class = "bg3">
-
-        </div>
-        </section>
-        
-    </body>
+        <!-- Java Script File -->
+        <script src="script.js"></script>
+    </body> 
 </html>
