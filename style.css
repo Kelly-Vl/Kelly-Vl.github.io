@@ -273,6 +273,13 @@ section {
     background-repeat: no-repeat;
 }
 
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
 .grid-items {
     display: grid;
     grid-gap: 70px;
@@ -285,4 +292,21 @@ section {
     width: 100%;
     max-width: 100px;
     height: auto;
+}
+
+#skill-header-box {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#skill-header {
+    position: relative;
+    top: 0;
+    margin-bottom: 1.3rem;
+    color: white;
+    font-size: 2rem;
+    font-weight: 200;
+    font-family: 'Archivo';
+    text-align: center;
 }
